@@ -13,9 +13,9 @@ Not searching for unused variables given on the command line.
 [36m--[0m Detecting CXX compiler ABI info - done
 [36m--[0m Detecting CXX compile features
 [36m--[0m Detecting CXX compile features - done
-[36m--[0m Using CATKIN_DEVEL_PREFIX: /home/erfan/M300_ws/devel/.private/dji_osdk_ros
-[36m--[0m Using CMAKE_PREFIX_PATH: /home/erfan/M300_ws/devel;/opt/ros/noetic
-[36m--[0m This workspace overlays: /home/erfan/M300_ws/devel;/opt/ros/noetic
+[36m--[0m Using CATKIN_DEVEL_PREFIX: /home/huajun/M300_ws/devel/.private/dji_osdk_ros
+[36m--[0m Using CMAKE_PREFIX_PATH: /home/huajun/M300_ws/devel;/opt/ros/noetic
+[36m--[0m This workspace overlays: /home/huajun/M300_ws/devel;/opt/ros/noetic
 [36m--[0m Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3")
 [36m--[0m Using PYTHON_EXECUTABLE: /usr/bin/python3
 [36m--[0m Using Debian Python package layout
@@ -23,7 +23,7 @@ Not searching for unused variables given on the command line.
 [36m--[0m Using empy: /usr/lib/python3/dist-packages/em.py
 [36m--[0m Using CATKIN_ENABLE_TESTING: ON
 [36m--[0m Call enable_testing()
-[36m--[0m Using CATKIN_TEST_RESULTS_DIR: /home/erfan/M300_ws/build/dji_osdk_ros/test_results
+[36m--[0m Using CATKIN_TEST_RESULTS_DIR: /home/huajun/M300_ws/build/dji_osdk_ros/test_results
 [36m--[0m Forcing gtest/gmock from source, though one was otherwise available.
 [36m--[0m Found gtest sources under '/usr/src/googletest': gtests will be built
 [36m--[0m Found gmock sources under '/usr/src/googletest': gmock will be built
@@ -40,20 +40,20 @@ Not searching for unused variables given on the command line.
 [36m--[0m dji_osdk_ros: 38 messages, 75 services
 [36m--[0m USB INCLUDE: /usr/include/libusb-1.0
 [36m--[0m Found OpenCV: /usr (found suitable version "4.2.0", minimum required is "4")
+
+dji_osdk_ros...
 [36m--[0m Found OpenCV 4.2.0 installed in the system, will use it for depth perception sample
 [36m--[0m  - Includes: /usr/include/opencv4
 [36m--[0m  - Libraries: opencv_calib3d;opencv_core;opencv_dnn;opencv_features2d;opencv_flann;opencv_highgui;opencv_imgcodecs;opencv_imgproc;opencv_ml;opencv_objdetect;opencv_photo;opencv_stitching;opencv_video;opencv_videoio;opencv_aruco;opencv_bgsegm;opencv_bioinspired;opencv_ccalib;opencv_datasets;opencv_dnn_objdetect;opencv_dnn_superres;opencv_dpm;opencv_face;opencv_freetype;opencv_fuzzy;opencv_hdf;opencv_hfs;opencv_img_hash;opencv_line_descriptor;opencv_optflow;opencv_phase_unwrapping;opencv_plot;opencv_quality;opencv_reg;opencv_rgbd;opencv_saliency;opencv_shape;opencv_stereo;opencv_structured_light;opencv_superres;opencv_surface_matching;opencv_text;opencv_tracking;opencv_videostab;opencv_viz;opencv_ximgproc;opencv_xobjdetect;opencv_xphoto
 [36m--[0m Did not find ximgproc in OpenCV
-
-dji_osdk_ros...
 [36m--[0m Did not find viz3d in OpenCV
 [36m--[0m PROJECT_NAME: dji_osdk_ros
 [36m--[0m DJIOSDK_LIB:
 [36m--[0m Found SDL2:
-[36m--[0m  - Includes: /usr/include/SDL2
-[36m--[0m  - Libraries: -lSDL2
+[36m--[0m  - Includes: /usr/local/include;/usr/local/include/SDL2
+[36m--[0m  - Libraries: SDL2::SDL2
 [36m--[0m Find OPENCV, camera stream node will be compiled.
 [36m--[0m Did not find required libraries, stereo vision depth perception node will not be compiled.
 [36m--[0m Configuring done
 [36m--[0m Generating done
-[36m--[0m Build files have been written to: /home/erfan/M300_ws/build/dji_osdk_ros
+[36m--[0m Build files have been written to: /home/huajun/M300_ws/build/dji_osdk_ros

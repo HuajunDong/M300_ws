@@ -1,7 +1,6 @@
-Symlinking /home/erfan/M300_ws/devel/share/arduino_actuator/cmake/arduino_actuatorConfig-version.cmake
-Symlinking /home/erfan/M300_ws/devel/share/arduino_actuator/cmake/arduino_actuatorConfig.cmake
-Symlinking /home/erfan/M300_ws/devel/lib/pkgconfig/arduino_actuator.pc
-Symlinking /home/erfan/M300_ws/devel/lib/python3/dist-packages/rosserial_python/__init__.py
-Symlinking /home/erfan/M300_ws/devel/lib/arduino_actuator/cmake.lock
-Symlinking /home/erfan/M300_ws/devel/lib/arduino_actuator/serial_node.py
-Symlinking /home/erfan/M300_ws/devel/lib/arduino_actuator/message_info_service.py
+Linked: (/home/huajun/M300_ws/devel/.private/arduino_actuator/lib/arduino_actuator/serial_node.py, /home/huajun/M300_ws/devel/lib/arduino_actuator/serial_node.py)
+Linked: (/home/huajun/M300_ws/devel/.private/arduino_actuator/lib/arduino_actuator/message_info_service.py, /home/huajun/M300_ws/devel/lib/arduino_actuator/message_info_service.py)
+Linked: (/home/huajun/M300_ws/devel/.private/arduino_actuator/lib/python3/dist-packages/rosserial_python/__init__.py, /home/huajun/M300_ws/devel/lib/python3/dist-packages/rosserial_python/__init__.py)
+Linked: (/home/huajun/M300_ws/devel/.private/arduino_actuator/lib/pkgconfig/arduino_actuator.pc, /home/huajun/M300_ws/devel/lib/pkgconfig/arduino_actuator.pc)
+Linked: (/home/huajun/M300_ws/devel/.private/arduino_actuator/share/arduino_actuator/cmake/arduino_actuatorConfig.cmake, /home/huajun/M300_ws/devel/share/arduino_actuator/cmake/arduino_actuatorConfig.cmake)
+Linked: (/home/huajun/M300_ws/devel/.private/arduino_actuator/share/arduino_actuator/cmake/arduino_actuatorConfig-version.cmake, /home/huajun/M300_ws/devel/share/arduino_actuator/cmake/arduino_actuatorConfig-version.cmake)

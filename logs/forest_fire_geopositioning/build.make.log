@@ -1,3 +1,7 @@
-[ 33%] Built target geo_positioning
-[ 66%] Built target fire_spots_visualization
-[100%] Built target compress_video_node
+[35m[1mScanning dependencies of target valve_control_node[0m
+[ 25%] Built target geo_positioning
+[ 50%] Built target fire_spots_visualization
+[ 75%] Built target compress_video_node
+[ 87%] [32mBuilding CXX object CMakeFiles/valve_control_node.dir/src/valve_control_node.cpp.o[0m
+[100%] [32m[1mLinking CXX executable /home/huajun/M300_ws/devel/.private/forest_fire_geopositioning/lib/forest_fire_geopositioning/valve_control_node[0m
+[100%] Built target valve_control_node

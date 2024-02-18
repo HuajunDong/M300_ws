@@ -227,3 +227,11 @@ catkin_install_python(PROGRAMS scripts/fire_detection_v8.py scripts/fire_detecti
 
 ## Add folders to be run by python nosetests
 # catkin_add_nosetests(test)
+
+add_executable(valve_control_node
+  src/valve_control_node.cpp
+)
+target_link_libraries(valve_control_node
+  ${catkin_LIBRARIES}
+)
+

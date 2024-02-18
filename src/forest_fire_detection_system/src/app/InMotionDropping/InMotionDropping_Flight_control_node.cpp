@@ -130,8 +130,7 @@ geometry_msgs::PointStamped local_position_;
 
 float euler[3];
 
-void gpsPositionSubCallback2(
-        const sensor_msgs::NavSatFix::ConstPtr &gpsPosition) {
+void gpsPositionSubCallback2(const sensor_msgs::NavSatFix::ConstPtr &gpsPosition) {
     gps_position_ = *gpsPosition;
     // ROS_INFO("latitude is [%f]",gps_position_.latitude);
     // ROS_INFO("longitude is [%f]",gps_position_.longitude);
@@ -228,7 +227,7 @@ void controlServo(int angle) {
     servoPub.publish(msg);
 }
 
-int main(int argc, char **argv) {
+int main(int argc, char **ar.gv) {
 
     ros::init(argc, argv, "flight_control_node");
     ros::NodeHandle nh;
@@ -367,7 +366,6 @@ int main(int argc, char **argv) {
             nh.subscribe("dji_osdk_ros/gps_position", 10,
                          gpsPositionSubCallback2);
 
-
     ros::Subscriber LocalPositionSub;
     LocalPositionSub =
             nh.subscribe("dji_osdk_ros/local_position", 10,
@@ -377,7 +375,6 @@ int main(int argc, char **argv) {
     QuaternionSub =
             nh.subscribe("dji_osdk_ros/attitude", 10,
                          QuaternionSubCallback);
-
 
     servoPub = nh.advertise<std_msgs::UInt16>("servo", 10); // Initialize servoPub
 
@@ -1001,25 +998,6 @@ int main(int argc, char **argv) {
                 }
             }
         }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        // Go to fire spots
-        moveByPosOffset(control_task, {0, 0, 9, 0}, 1, 3);
-
-
     }
 
     PRINT_INFO("going home now");

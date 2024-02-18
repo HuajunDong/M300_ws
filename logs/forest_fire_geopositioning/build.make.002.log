@@ -1,12 +1,7 @@
-[35m[1mScanning dependencies of target geo_positioning[0m
-[35m[1mScanning dependencies of target fire_spots_visualization[0m
-[35m[1mScanning dependencies of target compress_video_node[0m
-[ 16%] [32mBuilding CXX object CMakeFiles/geo_positioning.dir/src/geo_positioning.cpp.o[0m
-[ 33%] [32mBuilding CXX object CMakeFiles/compress_video_node.dir/src/compress_video_node.cpp.o[0m
-[ 50%] [32mBuilding CXX object CMakeFiles/fire_spots_visualization.dir/src/fire_spots_visualization.cpp.o[0m
-[ 66%] [32m[1mLinking CXX executable /home/erfan/M300_ws/devel/.private/forest_fire_geopositioning/lib/forest_fire_geopositioning/compress_video_node[0m
-[ 66%] Built target compress_video_node
-[ 83%] [32m[1mLinking CXX executable /home/erfan/M300_ws/devel/.private/forest_fire_geopositioning/lib/forest_fire_geopositioning/geo_positioning[0m
-[ 83%] Built target geo_positioning
-[100%] [32m[1mLinking CXX executable /home/erfan/M300_ws/devel/.private/forest_fire_geopositioning/lib/forest_fire_geopositioning/fire_spots_visualization[0m
-[100%] Built target fire_spots_visualization
+[35m[1mScanning dependencies of target valve_control_node[0m
+[ 25%] Built target geo_positioning
+[ 50%] Built target fire_spots_visualization
+[ 75%] Built target compress_video_node
+[ 87%] [32mBuilding CXX object CMakeFiles/valve_control_node.dir/src/valve_control_node.cpp.o[0m
+[100%] [32m[1mLinking CXX executable /home/huajun/M300_ws/devel/.private/forest_fire_geopositioning/lib/forest_fire_geopositioning/valve_control_node[0m
+[100%] Built target valve_control_node

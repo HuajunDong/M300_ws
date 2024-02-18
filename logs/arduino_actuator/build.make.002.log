@@ -1,0 +1,8 @@
+[ 50%] [32mBuilding CXX object CMakeFiles/valve_control_node.dir/src/valve_control_node.cpp.o[0m
+[01m[K/home/huajun/M300_ws/src/arduino_actuator/src/valve_control_node.cpp:1:10:[m[K [01;31m[Kfatal error: [m[Kros/ros.h: No such file or directory
+    1 | #include [01;31m[K<ros/ros.h>[m[K
+      |          [01;31m[K^~~~~~~~~~~[m[K
+compilation terminated.
+make[2]: *** [CMakeFiles/valve_control_node.dir/build.make:63: CMakeFiles/valve_control_node.dir/src/valve_control_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:195: CMakeFiles/valve_control_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

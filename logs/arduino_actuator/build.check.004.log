@@ -1,0 +1,19 @@
+[36m--[0m Using CATKIN_DEVEL_PREFIX: /home/huajun/M300_ws/devel/.private/arduino_actuator
+[36m--[0m Using CMAKE_PREFIX_PATH: /home/huajun/M300_ws/devel;/opt/ros/noetic
+[36m--[0m This workspace overlays: /home/huajun/M300_ws/devel;/opt/ros/noetic
+[31m[1mCMake Error[0m at /usr/share/cmake-3.16/Modules/FindPackageHandleStandardArgs.cmake:146 (message):
+  Could NOT find PythonInterp (missing: PYTHON_EXECUTABLE) (Required is at
+  least version "3")
+[36mCall Stack (most recent call first):[0m
+  /usr/share/cmake-3.16/Modules/FindPackageHandleStandardArgs.cmake:393 (_FPHSA_FAILURE_MESSAGE)
+  /usr/share/cmake-3.16/Modules/FindPythonInterp.cmake:169 (FIND_PACKAGE_HANDLE_STANDARD_ARGS)
+  /home/huajun/M300_ws/src/catkin/cmake/python.cmake:4 (find_package)
+  /home/huajun/M300_ws/src/catkin/cmake/all.cmake:164 (include)
+  /home/huajun/M300_ws/devel/share/catkin/cmake/catkinConfig.cmake:20 (include)
+  CMakeLists.txt:58 (find_package)
+
+
+[36m--[0m Configuring incomplete, errors occurred!
+See also "/home/huajun/M300_ws/build/arduino_actuator/CMakeFiles/CMakeOutput.log".
+See also "/home/huajun/M300_ws/build/arduino_actuator/CMakeFiles/CMakeError.log".
+make: *** [Makefile:924: cmake_check_build_system] Error 1

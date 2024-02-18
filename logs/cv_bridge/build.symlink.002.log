@@ -1,8 +1,8 @@
-Symlinking /home/erfan/M300_ws/devel/share/cv_bridge/cmake/cv_bridgeConfig.cmake
-Symlinking /home/erfan/M300_ws/devel/share/cv_bridge/cmake/cv_bridge-extras.cmake
-Symlinking /home/erfan/M300_ws/devel/share/cv_bridge/cmake/cv_bridgeConfig-version.cmake
-Symlinking /home/erfan/M300_ws/devel/lib/libcv_bridge.so
-Symlinking /home/erfan/M300_ws/devel/lib/pkgconfig/cv_bridge.pc
-Symlinking /home/erfan/M300_ws/devel/lib/python3/dist-packages/cv_bridge/__init__.py
-Symlinking /home/erfan/M300_ws/devel/lib/python3/dist-packages/cv_bridge/boost/__init__.py
-Symlinking /home/erfan/M300_ws/devel/lib/python3/dist-packages/cv_bridge/boost/cv_bridge_boost.so
+Linked: (/home/huajun/M300_ws/devel/.private/cv_bridge/lib/libcv_bridge.so, /home/huajun/M300_ws/devel/lib/libcv_bridge.so)
+Linked: (/home/huajun/M300_ws/devel/.private/cv_bridge/lib/python3/dist-packages/cv_bridge/__init__.py, /home/huajun/M300_ws/devel/lib/python3/dist-packages/cv_bridge/__init__.py)
+Linked: (/home/huajun/M300_ws/devel/.private/cv_bridge/lib/python3/dist-packages/cv_bridge/boost/cv_bridge_boost.so, /home/huajun/M300_ws/devel/lib/python3/dist-packages/cv_bridge/boost/cv_bridge_boost.so)
+Linked: (/home/huajun/M300_ws/devel/.private/cv_bridge/lib/python3/dist-packages/cv_bridge/boost/__init__.py, /home/huajun/M300_ws/devel/lib/python3/dist-packages/cv_bridge/boost/__init__.py)
+Linked: (/home/huajun/M300_ws/devel/.private/cv_bridge/lib/pkgconfig/cv_bridge.pc, /home/huajun/M300_ws/devel/lib/pkgconfig/cv_bridge.pc)
+Linked: (/home/huajun/M300_ws/devel/.private/cv_bridge/share/cv_bridge/cmake/cv_bridgeConfig-version.cmake, /home/huajun/M300_ws/devel/share/cv_bridge/cmake/cv_bridgeConfig-version.cmake)
+Linked: (/home/huajun/M300_ws/devel/.private/cv_bridge/share/cv_bridge/cmake/cv_bridge-extras.cmake, /home/huajun/M300_ws/devel/share/cv_bridge/cmake/cv_bridge-extras.cmake)
+Linked: (/home/huajun/M300_ws/devel/.private/cv_bridge/share/cv_bridge/cmake/cv_bridgeConfig.cmake, /home/huajun/M300_ws/devel/share/cv_bridge/cmake/cv_bridgeConfig.cmake)
