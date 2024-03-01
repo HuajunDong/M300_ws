@@ -67,8 +67,8 @@ set(forest_fire_geopositioning_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(forest_fire_geopositioning_SOURCE_PREFIX /home/erfan/M300_ws/src/forest_fire_geopositioning)
-  set(forest_fire_geopositioning_DEVEL_PREFIX /home/erfan/M300_ws/src/cmake-build-debug/devel)
+  set(forest_fire_geopositioning_SOURCE_PREFIX /home/huajun/M300_ws/src/forest_fire_geopositioning)
+  set(forest_fire_geopositioning_DEVEL_PREFIX /home/huajun/M300_ws/src/cmake-build-debug/devel)
   set(forest_fire_geopositioning_INSTALL_PREFIX "")
   set(forest_fire_geopositioning_PREFIX ${forest_fire_geopositioning_DEVEL_PREFIX})
 else()

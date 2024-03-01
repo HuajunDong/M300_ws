@@ -67,8 +67,8 @@ set(dji_osdk_ros_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(dji_osdk_ros_SOURCE_PREFIX /home/erfan/M300_ws/src/dji_osdk_ros_cv4)
-  set(dji_osdk_ros_DEVEL_PREFIX /home/erfan/M300_ws/src/cmake-build-debug/devel)
+  set(dji_osdk_ros_SOURCE_PREFIX /home/huajun/M300_ws/src/dji_osdk_ros_cv4)
+  set(dji_osdk_ros_DEVEL_PREFIX /home/huajun/M300_ws/src/cmake-build-debug/devel)
   set(dji_osdk_ros_INSTALL_PREFIX "")
   set(dji_osdk_ros_PREFIX ${dji_osdk_ros_DEVEL_PREFIX})
 else()

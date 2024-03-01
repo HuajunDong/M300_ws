@@ -6,8 +6,8 @@ import stat
 import sys
 
 # find the import for catkin's python package - either from source space or from an installed underlay
-if os.path.exists(os.path.join('/opt/ros/noetic/share/catkin/cmake', 'catkinConfig.cmake.in')):
-    sys.path.insert(0, os.path.join('/opt/ros/noetic/share/catkin/cmake', '..', 'python'))
+if os.path.exists(os.path.join('/home/huajun/M300_ws/src/catkin/cmake', 'catkinConfig.cmake.in')):
+    sys.path.insert(0, os.path.join('/home/huajun/M300_ws/src/catkin/cmake', '..', 'python'))
 try:
     from catkin.environment_cache import generate_environment_script
 except ImportError:
@@ -19,9 +19,9 @@ except ImportError:
             break
     from catkin.environment_cache import generate_environment_script
 
-code = generate_environment_script('/home/erfan/M300_ws/src/cmake-build-debug/devel/env.sh')
+code = generate_environment_script('/home/huajun/M300_ws/src/cmake-build-debug/devel/env.sh')
 
-output_filename = '/home/erfan/M300_ws/src/cmake-build-debug/catkin_generated/setup_cached.sh'
+output_filename = '/home/huajun/M300_ws/src/cmake-build-debug/catkin_generated/setup_cached.sh'
 with open(output_filename, 'w') as f:
     # print('Generate script for cached setup "%s"' % output_filename)
     f.write('\n'.join(code))

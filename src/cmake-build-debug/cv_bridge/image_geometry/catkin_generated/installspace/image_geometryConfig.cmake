@@ -67,8 +67,8 @@ set(image_geometry_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(image_geometry_SOURCE_PREFIX /home/erfan/M300_ws/src/cv_bridge/image_geometry)
-  set(image_geometry_DEVEL_PREFIX /home/erfan/M300_ws/src/cmake-build-debug/devel)
+  set(image_geometry_SOURCE_PREFIX /home/huajun/M300_ws/src/cv_bridge/image_geometry)
+  set(image_geometry_DEVEL_PREFIX /home/huajun/M300_ws/src/cmake-build-debug/devel)
   set(image_geometry_INSTALL_PREFIX "")
   set(image_geometry_PREFIX ${image_geometry_DEVEL_PREFIX})
 else()

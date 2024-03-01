@@ -4,5 +4,5 @@ PROJECT_PKG_CONFIG_INCLUDE_DIRS = "".split(';') if "" != "" else []
 PROJECT_CATKIN_DEPENDS = "".replace(';', ' ')
 PKG_CONFIG_LIBRARIES_WITH_PREFIX = "".split(';') if "" != "" else []
 PROJECT_NAME = "forest_fire_geopositioning"
-PROJECT_SPACE_DIR = "/home/erfan/M300_ws/src/cmake-build-debug/devel"
+PROJECT_SPACE_DIR = "/home/huajun/M300_ws/src/cmake-build-debug/devel"
 PROJECT_VERSION = "0.0.0"

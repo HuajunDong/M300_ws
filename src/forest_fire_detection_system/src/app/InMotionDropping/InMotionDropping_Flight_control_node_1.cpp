@@ -1,5 +1,5 @@
 /** @file advanced_sensing_node.cpp
-author: Erfan Dilfanian
+author: Huajun Dong
  */
 
 //INCLUDE
@@ -64,6 +64,7 @@ author: Erfan Dilfanian
 using namespace dji_osdk_ros;
 using namespace std;
 
+//Useless comments
 /*
 FFDS::APP::SingleFirePointTaskManager::SingleFirePointTaskManager() {
 
@@ -79,7 +80,6 @@ FFDS::APP::SingleFirePointTaskManager::SingleFirePointTaskManager() {
     attitudeSub =
             nh.subscribe("dji_osdk_ros/attitude", 10,
                          &SingleFirePointTaskManager::attitudeSubCallback, this);*/
-
 // gimbal_control_client = nh.serviceClient<dji_osdk_ros::GimbalAction>("gimbal_task_control");
 
 
@@ -100,7 +100,6 @@ FFDS::APP::SingleFirePointTaskManager::SingleFirePointTaskManager() {
  //PRINT_INFO("initializing Done");
 }
 */
-
 /*FFDS::APP::SingleFirePointTaskManager::~SingleFirePointTaskManager() {
    /* obtainCtrlAuthority.request.enable_obtain = false;
     obtain_ctrl_authority_client.call(obtainCtrlAuthority);
@@ -165,7 +164,7 @@ void LocalPositionSubCallback(const geometry_msgs::PointStamped::ConstPtr &Local
 
 }
 
-
+//Useless comment
 /*sensor_msgs::NavSatFix
 FFDS::APP::SingleFirePointTaskManager::getHomeGPosAverage(int times) {
     FFDS::TOOLS::PositionHelper posHelper;
@@ -233,7 +232,6 @@ double calculateDis(const node& a, const node& b) {
 };
 
 //A function defination for TSP
-// �жϽ���Ƿ��ѷ���,������0�Ž��
 bool isVisited(bool visited[]) {
     for (int i = 1; i < N; i++) {
         if (visited[i] == false) {
@@ -267,17 +265,20 @@ void FireCallback2(const geometry_msgs::PoseArrayConstPtr &fire_spots_GPS){
     }
 
     //Get home GPS
-    homeGPos = getAverageGPS(50);
+
+    //    homeGPos = getAverageGPS(50);
+    ros::spinOnce();
+    gps_position_
     float homeGPS_posArray[3];
-    homeGPS_posArray[0] = homeGPos.latitude;
-    homeGPS_posArray[1] = homeGPos.longitude;
-    homeGPS_posArray[2] = homeGPos.altitude;
+    homeGPS_posArray[0] = gps_position_.latitude;
+    homeGPS_posArray[1] = gps_position_.longitude;
+    homeGPS_posArray[2] = gps_position_.altitude;
 
     //Put home GPS into “nodes”， array of node class
     nodes[0].id = 0;
-    nodes[0].x = homeGPos.latitude;
-    nodes[0].y = homeGPos.longitude;
-    nodes[0].z = homeGPos.altitude;
+    nodes[0].x = gps_position_.latitude;
+    nodes[0].y = gps_position_.longitude;
+    nodes[0].z = gps_position_.altitude;
 
     //Define a 2D array to store the distance
     double dis[N][N];
@@ -293,7 +294,6 @@ void FireCallback2(const geometry_msgs::PoseArrayConstPtr &fire_spots_GPS){
 
     //The following codes are for dynamic programming
     M = 1 << (N - 1);
-    // ���涥��i��״̬s���ص���ʼ�����С����
     double dp[N][M];
     // store the path
     std::vector<int> path;
@@ -413,7 +413,9 @@ int main(int argc, char **argv) {
          << "[b] Hovering dropping after geo-positioning" << std::endl
          << "[c] In-motion-dropping after geo-positioning"<< std::endl
          << "[d] guided-IN-motion-dropping after geopositioning" << std::endl;
-         << "[e] Multiple fire spots multiple drops" << std::endl;
+         << "[e] Multiple fire spots multiple drops with detection" << std::endl;
+         << "[f] Multiple fire spots multiple drops with single fixed GPS(without geo-positioning)"<< std::endl;
+         << "[h] Multiple fire spots multiple drops with multiple fixed GPS (without geo-positioning)"
     char scenario;
     cin >> scenario;
 
@@ -883,7 +885,7 @@ int main(int argc, char **argv) {
 
     if (scenario == 'e'){
         //Get fire GPS position and use callback function to put all the deteced fire spots GPS info and sequence to nodes_vec, a global vector
-        ros::Subscriber fire_spots_GPS_sub = nh.subscribe("/position/fire_spots_GPS", 1, FireCallback);
+        ros::Subscriber fire_spots_GPS_sub = nh.subscribe("/position/fire_spots_GPS", 1, FireCallback2);
 
         // Some copied codes from Erfan's about M300 functions (including some new codes)
         control_task.request.task = FlightTaskControl::Request::TASK_TAKEOFF;
@@ -914,8 +916,8 @@ int main(int argc, char **argv) {
                     moveByPosOffset(control_task, {0, 0, 9, 0}, 1, 3);
 
                     //Define mission start position
-                    float mission_start_pos[3] = {fire_gps_local_pos[i][0] - 7, fire_gps_local_pos[i][1] + 4,
-                                                  9}; // it also can be current x y z
+                    float mission_start_pos[3] = {fire_gps_local_pos[i][0] , fire_gps_local_pos[i][1] ,
+                                                  0}; // it also can be current x y z
 
                     float yaw_const= 0 ;
 
@@ -1000,6 +1002,120 @@ int main(int argc, char **argv) {
         }
     }
 
+    if (scenario == 'h')
+    {
+        float lat;
+        float lon;
+        float alt;
+        cout << "please enter fire's latitude" << endl;
+        cin >> lat;
+        cout << endl;
+        cout << "please enter fire's longitude" << endl;
+        cin >> lon;
+        cout << endl;
+        // cout<<"please enter fire's alt"<<endl;
+        //cin>>alt;
+
+        control_task.request.task = FlightTaskControl::Request::TASK_TAKEOFF;
+        ROS_INFO_STREAM("Takeoff request sending ...");
+        task_control_client.call(control_task);
+        if (control_task.response.result == false) {
+            ROS_ERROR_STREAM("Takeoff task failed");
+        }
+
+        if (control_task.response.result == true) {
+            ROS_INFO_STREAM("Takeoff task successful");
+            // ros::Duration(2.0).sleep();
+
+            fire_gps.latitude = lat;
+            fire_gps.longitude = lon;
+            fire_gps.altitude = alt;
+
+/*
+            fire_gps.latitude = 45.45842238198102;
+            fire_gps.longitude = -73.93238311980387;
+            fire_gps.altitude = 111.356392;
+*/
+
+            float fire_GPS_posArray[3]; // posArray :  Position Array
+
+            fire_GPS_posArray[0] = fire_gps.latitude;
+            fire_GPS_posArray[1] = fire_gps.longitude;
+            fire_GPS_posArray[2] = fire_gps.altitude;
+
+            ros::spinOnce();
+
+            ROS_INFO("fire_GPS_posArray[0] Is [%f]", fire_GPS_posArray[0]);
+            ROS_INFO("fire_GPS_posArray[1] Is [%f]", fire_GPS_posArray[1]);
+            ROS_INFO("fire_GPS_posArray[2] Is [%f]", fire_GPS_posArray[2]);
+
+            float fire_gps_local_pos[3];
+
+            FFDS::TOOLS::LatLong2Meter(homeGPS_posArray, fire_GPS_posArray, fire_gps_local_pos);
+
+            ROS_INFO("fire_gps_local_pos[0] Is [%f]", fire_gps_local_pos[0]);
+            ROS_INFO("fire_gps_local_pos[1] Is [%f]", fire_gps_local_pos[1]);
+            ROS_INFO("fire_gps_local_pos[2] Is [%f]", fire_gps_local_pos[2]);
+
+            ros::spinOnce();
+
+            moveByPosOffset(control_task, {0, 0, 9, 0}, 1, 3);
+
+            float mission_start_pos[3] = {fire_gps_local_pos[0] - 7, fire_gps_local_pos[1] + 4,
+                                          9}; // it also can be current x y z
+
+            ROS_INFO("homegpos latitude is [%f]", homeGPS_posArray[0]);
+            ROS_INFO("homegpos longitude is [%f]", homeGPS_posArray[1]);
+            ROS_INFO("homegpos attitude is [%f]", homeGPS_posArray[2]);
+
+            float yaw_const= 0 ;
+
+            moveByPosOffset(control_task,
+                            {mission_start_pos[0], mission_start_pos[1], 0,yaw_const}, 1, 3);
+
+            ros::spinOnce();
+
+            float current_GPS_posArray[3];
+            current_GPS_posArray[0] = gps_position_.latitude;
+            current_GPS_posArray[1] = gps_position_.longitude;
+            current_GPS_posArray[2] = gps_position_.altitude;
+
+            FFDS::TOOLS::LatLong2Meter(homeGPS_posArray, current_GPS_posArray, mission_start_pos);
+
+
+            float yaw_adjustment; // yaw adjustment before approach
+            float deltaX = fire_gps_local_pos[0] - mission_start_pos[0];
+            float deltaY = fire_gps_local_pos[1] - mission_start_pos[1];
+
+            ROS_INFO("deltaX is [%f]", deltaX);
+            ROS_INFO("deltaY is [%f]", deltaY);
+
+            yaw_adjustment = Rad2Deg(atan2(deltaY, deltaX)); // note that tan2 output is in radian
+            // Also I added 90 as we want the yaw angle from x axis which is in Y direction
+
+            ROS_INFO("yaw_adjustment_angle is [%f]", yaw_adjustment);
+            moveByPosOffset(control_task, {0, 0, 0, yaw_adjustment}, 1,
+                            3);  // note that x y z goes into this funciton
+
+            // velocity mission
+
+            float d = sqrt(
+                    pow(fire_gps_local_pos[0] - mission_start_pos[0], 2) +
+                    pow(fire_gps_local_pos[1] - mission_start_pos[1], 2));
+
+            float abs_vel = 5; // absolute velocity that needs to be projected
+
+            float height = 10;
+
+            velocityAndYawRateControl({abs_vel * cosd(yaw_adjustment), abs_vel * sind(yaw_adjustment), 0}, 5000,
+                                      abs_vel, d, height);
+
+            ROS_INFO_STREAM("Step 1 over!EmergencyBrake for 2s\n");
+            emergency_brake_client.call(emergency_brake);
+            ros::Duration(2).sleep();
+    }
+        if (scenario == 'h')
+
     PRINT_INFO("going home now");
     control_task.request.task =
             dji_osdk_ros::FlightTaskControl::Request::TASK_GOHOME;
@@ -1047,7 +1163,6 @@ bool moveByPosOffset(FlightTaskControl &task, const JoystickCommand &offsetDesir
 
 void velocityAndYawRateControl(const JoystickCommand &offsetDesired, uint32_t timeMs, float abs_vel, float d, float height) {
 
-
     double originTime = 0;
     double currentTime = 0;
     // uint64_t elapsedTimeInMs = 0;
@@ -1084,10 +1199,9 @@ void velocityAndYawRateControl(const JoystickCommand &offsetDesired, uint32_t ti
         if (elapsedTimeInMs > release_time) {
             // controlServo(angle);
 
-
             ros::spinOnce();
             if (flag == 0) {
-                std:: string DropWaterCommand = "rosrun arduino_actuator servo_pub.py";
+                std:: string DropWaterCommand = "rosrun arduino_actuator arduino_controller.py";
                 FILE *pp = popen(DropWaterCommand.c_str(),"r");
                 if(pp != NULL)
                 {
@@ -1095,8 +1209,6 @@ void velocityAndYawRateControl(const JoystickCommand &offsetDesired, uint32_t ti
                 }
                 else{
                     PRINT_INFO("fail to drop water!");
-
-
                 }
 
                 ROS_INFO("released valve at [%f]", elapsedTimeInMs); }
@@ -1104,7 +1216,6 @@ void velocityAndYawRateControl(const JoystickCommand &offsetDesired, uint32_t ti
             flag = 1;
         } else {
             joystick_action_client.call(joystickAction);
-
         }
 
 
@@ -1121,7 +1232,6 @@ sensor_msgs::NavSatFix getAverageGPS(const int average_times) {
            isEqual(0.0, gps_position_.longitude) ||
            isEqual(0.0, gps_position_.altitude)) {
         ros::spinOnce();
-
     }
     // PRINT_WARN("zero in gps_position, waiting for normal gps position!");
 

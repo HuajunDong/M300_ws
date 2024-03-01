@@ -67,8 +67,8 @@ set(forest_fire_detection_system_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(forest_fire_detection_system_SOURCE_PREFIX /home/erfan/M300_ws/src/forest_fire_detection_system)
-  set(forest_fire_detection_system_DEVEL_PREFIX /home/erfan/M300_ws/src/cmake-build-debug/devel)
+  set(forest_fire_detection_system_SOURCE_PREFIX /home/huajun/M300_ws/src/forest_fire_detection_system)
+  set(forest_fire_detection_system_DEVEL_PREFIX /home/huajun/M300_ws/src/cmake-build-debug/devel)
   set(forest_fire_detection_system_INSTALL_PREFIX "")
   set(forest_fire_detection_system_PREFIX ${forest_fire_detection_system_DEVEL_PREFIX})
 else()

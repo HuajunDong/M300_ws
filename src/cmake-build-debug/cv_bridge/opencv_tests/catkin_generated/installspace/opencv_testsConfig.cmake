@@ -67,8 +67,8 @@ set(opencv_tests_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(opencv_tests_SOURCE_PREFIX /home/erfan/M300_ws/src/cv_bridge/opencv_tests)
-  set(opencv_tests_DEVEL_PREFIX /home/erfan/M300_ws/src/cmake-build-debug/devel)
+  set(opencv_tests_SOURCE_PREFIX /home/huajun/M300_ws/src/cv_bridge/opencv_tests)
+  set(opencv_tests_DEVEL_PREFIX /home/huajun/M300_ws/src/cmake-build-debug/devel)
   set(opencv_tests_INSTALL_PREFIX "")
   set(opencv_tests_PREFIX ${opencv_tests_DEVEL_PREFIX})
 else()

@@ -67,8 +67,8 @@ set(arduino_actuator_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(arduino_actuator_SOURCE_PREFIX /home/erfan/M300_ws/src/arduino_actuator)
-  set(arduino_actuator_DEVEL_PREFIX /home/erfan/M300_ws/src/cmake-build-debug/devel)
+  set(arduino_actuator_SOURCE_PREFIX /home/huajun/M300_ws/src/arduino_actuator)
+  set(arduino_actuator_DEVEL_PREFIX /home/huajun/M300_ws/src/cmake-build-debug/devel)
   set(arduino_actuator_INSTALL_PREFIX "")
   set(arduino_actuator_PREFIX ${arduino_actuator_DEVEL_PREFIX})
 else()

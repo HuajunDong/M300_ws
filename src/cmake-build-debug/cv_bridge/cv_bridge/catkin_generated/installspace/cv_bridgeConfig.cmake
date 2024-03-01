@@ -67,8 +67,8 @@ set(cv_bridge_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(cv_bridge_SOURCE_PREFIX /home/erfan/M300_ws/src/cv_bridge/cv_bridge)
-  set(cv_bridge_DEVEL_PREFIX /home/erfan/M300_ws/src/cmake-build-debug/devel)
+  set(cv_bridge_SOURCE_PREFIX /home/huajun/M300_ws/src/cv_bridge/cv_bridge)
+  set(cv_bridge_DEVEL_PREFIX /home/huajun/M300_ws/src/cmake-build-debug/devel)
   set(cv_bridge_INSTALL_PREFIX "")
   set(cv_bridge_PREFIX ${cv_bridge_DEVEL_PREFIX})
 else()
