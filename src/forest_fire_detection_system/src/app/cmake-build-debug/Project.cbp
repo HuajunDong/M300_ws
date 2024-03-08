@@ -1,0 +1,515 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="Project"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/huajun/M300_ws/src/forest_fire_detection_system/src/app/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/huajun/M300_ws/src/forest_fire_detection_system/src/app/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/huajun/M300_ws/src/forest_fire_detection_system/src/app/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/huajun/M300_ws/src/forest_fire_detection_system/src/app/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/huajun/M300_ws/src/forest_fire_detection_system/src/app/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="InMotionDrop">
+				<Option output="/home/huajun/M300_ws/src/forest_fire_detection_system/src/app/cmake-build-debug/InMotionDrop" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/huajun/M300_ws/src/forest_fire_detection_system/src/app/cmake-build-debug/Makefile&quot;  VERBOSE=1 InMotionDrop"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/huajun/M300_ws/src/forest_fire_detection_system/src/app/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/huajun/M300_ws/src/forest_fire_detection_system/src/app/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/huajun/M300_ws/src/forest_fire_detection_system/src/app/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="InMotionDrop/fast">
+				<Option output="/home/huajun/M300_ws/src/forest_fire_detection_system/src/app/cmake-build-debug/InMotionDrop" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/huajun/M300_ws/src/forest_fire_detection_system/src/app/cmake-build-debug/Makefile&quot;  VERBOSE=1 InMotionDrop/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/huajun/M300_ws/src/forest_fire_detection_system/src/app/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/huajun/M300_ws/src/forest_fire_detection_system/src/app/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/huajun/M300_ws/src/forest_fire_detection_system/src/app/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="InMotionDropping_Flight_control_node">
+				<Option output="/home/huajun/M300_ws/src/forest_fire_detection_system/src/app/cmake-build-debug/InMotionDropping_Flight_control_node" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/huajun/M300_ws/src/forest_fire_detection_system/src/app/cmake-build-debug/Makefile&quot;  VERBOSE=1 InMotionDropping_Flight_control_node"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/huajun/M300_ws/src/forest_fire_detection_system/src/app/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/huajun/M300_ws/src/forest_fire_detection_system/src/app/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/huajun/M300_ws/src/forest_fire_detection_system/src/app/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="InMotionDropping_Flight_control_node/fast">
+				<Option output="/home/huajun/M300_ws/src/forest_fire_detection_system/src/app/cmake-build-debug/InMotionDropping_Flight_control_node" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/huajun/M300_ws/src/forest_fire_detection_system/src/app/cmake-build-debug/Makefile&quot;  VERBOSE=1 InMotionDropping_Flight_control_node/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/huajun/M300_ws/src/forest_fire_detection_system/src/app/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/huajun/M300_ws/src/forest_fire_detection_system/src/app/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/huajun/M300_ws/src/forest_fire_detection_system/src/app/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="InMotionDropping_Flight_control_node_1">
+				<Option output="/home/huajun/M300_ws/src/forest_fire_detection_system/src/app/cmake-build-debug/InMotionDropping_Flight_control_node_1" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/huajun/M300_ws/src/forest_fire_detection_system/src/app/cmake-build-debug/Makefile&quot;  VERBOSE=1 InMotionDropping_Flight_control_node_1"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/huajun/M300_ws/src/forest_fire_detection_system/src/app/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/huajun/M300_ws/src/forest_fire_detection_system/src/app/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/huajun/M300_ws/src/forest_fire_detection_system/src/app/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="InMotionDropping_Flight_control_node_1/fast">
+				<Option output="/home/huajun/M300_ws/src/forest_fire_detection_system/src/app/cmake-build-debug/InMotionDropping_Flight_control_node_1" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/huajun/M300_ws/src/forest_fire_detection_system/src/app/cmake-build-debug/Makefile&quot;  VERBOSE=1 InMotionDropping_Flight_control_node_1/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/huajun/M300_ws/src/forest_fire_detection_system/src/app/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/huajun/M300_ws/src/forest_fire_detection_system/src/app/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/huajun/M300_ws/src/forest_fire_detection_system/src/app/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="InMotionDropping_Flight_control_node_2">
+				<Option output="/home/huajun/M300_ws/src/forest_fire_detection_system/src/app/cmake-build-debug/InMotionDropping_Flight_control_node_2" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/huajun/M300_ws/src/forest_fire_detection_system/src/app/cmake-build-debug/Makefile&quot;  VERBOSE=1 InMotionDropping_Flight_control_node_2"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/huajun/M300_ws/src/forest_fire_detection_system/src/app/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/huajun/M300_ws/src/forest_fire_detection_system/src/app/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/huajun/M300_ws/src/forest_fire_detection_system/src/app/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="InMotionDropping_Flight_control_node_2/fast">
+				<Option output="/home/huajun/M300_ws/src/forest_fire_detection_system/src/app/cmake-build-debug/InMotionDropping_Flight_control_node_2" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/huajun/M300_ws/src/forest_fire_detection_system/src/app/cmake-build-debug/Makefile&quot;  VERBOSE=1 InMotionDropping_Flight_control_node_2/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/huajun/M300_ws/src/forest_fire_detection_system/src/app/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/huajun/M300_ws/src/forest_fire_detection_system/src/app/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/huajun/M300_ws/src/forest_fire_detection_system/src/app/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="CMakeCXXCompilerId">
+				<Option output="/home/huajun/M300_ws/src/forest_fire_detection_system/src/app/cmake-build-debug/CMakeCXXCompilerId" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/huajun/M300_ws/src/forest_fire_detection_system/src/app/cmake-build-debug/Makefile&quot;  VERBOSE=1 CMakeCXXCompilerId"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/huajun/M300_ws/src/forest_fire_detection_system/src/app/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/huajun/M300_ws/src/forest_fire_detection_system/src/app/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/huajun/M300_ws/src/forest_fire_detection_system/src/app/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="CMakeCXXCompilerId/fast">
+				<Option output="/home/huajun/M300_ws/src/forest_fire_detection_system/src/app/cmake-build-debug/CMakeCXXCompilerId" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/huajun/M300_ws/src/forest_fire_detection_system/src/app/cmake-build-debug/Makefile&quot;  VERBOSE=1 CMakeCXXCompilerId/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/huajun/M300_ws/src/forest_fire_detection_system/src/app/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/huajun/M300_ws/src/forest_fire_detection_system/src/app/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/huajun/M300_ws/src/forest_fire_detection_system/src/app/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="GrabDataDepthEstimation">
+				<Option output="/home/huajun/M300_ws/src/forest_fire_detection_system/src/app/cmake-build-debug/GrabDataDepthEstimation" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/huajun/M300_ws/src/forest_fire_detection_system/src/app/cmake-build-debug/Makefile&quot;  VERBOSE=1 GrabDataDepthEstimation"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/huajun/M300_ws/src/forest_fire_detection_system/src/app/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/huajun/M300_ws/src/forest_fire_detection_system/src/app/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/huajun/M300_ws/src/forest_fire_detection_system/src/app/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="GrabDataDepthEstimation/fast">
+				<Option output="/home/huajun/M300_ws/src/forest_fire_detection_system/src/app/cmake-build-debug/GrabDataDepthEstimation" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/huajun/M300_ws/src/forest_fire_detection_system/src/app/cmake-build-debug/Makefile&quot;  VERBOSE=1 GrabDataDepthEstimation/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/huajun/M300_ws/src/forest_fire_detection_system/src/app/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/huajun/M300_ws/src/forest_fire_detection_system/src/app/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/huajun/M300_ws/src/forest_fire_detection_system/src/app/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="PreciselyWaterDropping">
+				<Option output="/home/huajun/M300_ws/src/forest_fire_detection_system/src/app/cmake-build-debug/PreciselyWaterDropping" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/huajun/M300_ws/src/forest_fire_detection_system/src/app/cmake-build-debug/Makefile&quot;  VERBOSE=1 PreciselyWaterDropping"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/huajun/M300_ws/src/forest_fire_detection_system/src/app/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/huajun/M300_ws/src/forest_fire_detection_system/src/app/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/huajun/M300_ws/src/forest_fire_detection_system/src/app/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="PreciselyWaterDropping/fast">
+				<Option output="/home/huajun/M300_ws/src/forest_fire_detection_system/src/app/cmake-build-debug/PreciselyWaterDropping" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/huajun/M300_ws/src/forest_fire_detection_system/src/app/cmake-build-debug/Makefile&quot;  VERBOSE=1 PreciselyWaterDropping/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/huajun/M300_ws/src/forest_fire_detection_system/src/app/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/huajun/M300_ws/src/forest_fire_detection_system/src/app/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/huajun/M300_ws/src/forest_fire_detection_system/src/app/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="GrabInfoForReconstruction">
+				<Option output="/home/huajun/M300_ws/src/forest_fire_detection_system/src/app/cmake-build-debug/GrabInfoForReconstruction" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/huajun/M300_ws/src/forest_fire_detection_system/src/app/cmake-build-debug/Makefile&quot;  VERBOSE=1 GrabInfoForReconstruction"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/huajun/M300_ws/src/forest_fire_detection_system/src/app/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/huajun/M300_ws/src/forest_fire_detection_system/src/app/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/huajun/M300_ws/src/forest_fire_detection_system/src/app/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="GrabInfoForReconstruction/fast">
+				<Option output="/home/huajun/M300_ws/src/forest_fire_detection_system/src/app/cmake-build-debug/GrabInfoForReconstruction" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/huajun/M300_ws/src/forest_fire_detection_system/src/app/cmake-build-debug/Makefile&quot;  VERBOSE=1 GrabInfoForReconstruction/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/huajun/M300_ws/src/forest_fire_detection_system/src/app/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/huajun/M300_ws/src/forest_fire_detection_system/src/app/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/huajun/M300_ws/src/forest_fire_detection_system/src/app/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="SingleFirePointTaskManager">
+				<Option output="/home/huajun/M300_ws/src/forest_fire_detection_system/src/app/cmake-build-debug/SingleFirePointTaskManager" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/huajun/M300_ws/src/forest_fire_detection_system/src/app/cmake-build-debug/Makefile&quot;  VERBOSE=1 SingleFirePointTaskManager"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/huajun/M300_ws/src/forest_fire_detection_system/src/app/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/huajun/M300_ws/src/forest_fire_detection_system/src/app/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/huajun/M300_ws/src/forest_fire_detection_system/src/app/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="SingleFirePointTaskManager/fast">
+				<Option output="/home/huajun/M300_ws/src/forest_fire_detection_system/src/app/cmake-build-debug/SingleFirePointTaskManager" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/huajun/M300_ws/src/forest_fire_detection_system/src/app/cmake-build-debug/Makefile&quot;  VERBOSE=1 SingleFirePointTaskManager/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/huajun/M300_ws/src/forest_fire_detection_system/src/app/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/huajun/M300_ws/src/forest_fire_detection_system/src/app/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/huajun/M300_ws/src/forest_fire_detection_system/src/app/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="valve_control_node">
+				<Option output="/home/huajun/M300_ws/src/forest_fire_detection_system/src/app/cmake-build-debug/valve_control_node" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/huajun/M300_ws/src/forest_fire_detection_system/src/app/cmake-build-debug/Makefile&quot;  VERBOSE=1 valve_control_node"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/huajun/M300_ws/src/forest_fire_detection_system/src/app/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/huajun/M300_ws/src/forest_fire_detection_system/src/app/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/huajun/M300_ws/src/forest_fire_detection_system/src/app/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="valve_control_node/fast">
+				<Option output="/home/huajun/M300_ws/src/forest_fire_detection_system/src/app/cmake-build-debug/valve_control_node" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/huajun/M300_ws/src/forest_fire_detection_system/src/app/cmake-build-debug/Makefile&quot;  VERBOSE=1 valve_control_node/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/huajun/M300_ws/src/forest_fire_detection_system/src/app/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/huajun/M300_ws/src/forest_fire_detection_system/src/app/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/huajun/M300_ws/src/forest_fire_detection_system/src/app/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/huajun/M300_ws/src/forest_fire_detection_system/src/app/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/huajun/M300_ws/src/forest_fire_detection_system/src/app/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/huajun/M300_ws/src/forest_fire_detection_system/src/app/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/huajun/M300_ws/src/forest_fire_detection_system/src/app/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/huajun/M300_ws/src/forest_fire_detection_system/src/app/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/huajun/M300_ws/src/forest_fire_detection_system/src/app/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/huajun/M300_ws/src/forest_fire_detection_system/src/app/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/huajun/M300_ws/src/forest_fire_detection_system/src/app/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/huajun/M300_ws/src/forest_fire_detection_system/src/app/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/huajun/M300_ws/src/forest_fire_detection_system/src/app/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/huajun/M300_ws/src/forest_fire_detection_system/src/app/InMotionDrop/InMotionDrop.cpp">
+			<Option target="InMotionDrop"/>
+		</Unit>
+		<Unit filename="/home/huajun/M300_ws/src/forest_fire_detection_system/src/app/InMotionDropping/InMotionDropping_Flight_control_node.cpp">
+			<Option target="InMotionDropping_Flight_control_node"/>
+		</Unit>
+		<Unit filename="/home/huajun/M300_ws/src/forest_fire_detection_system/src/app/InMotionDropping/InMotionDropping_Flight_control_node_1.cpp">
+			<Option target="InMotionDropping_Flight_control_node_1"/>
+		</Unit>
+		<Unit filename="/home/huajun/M300_ws/src/forest_fire_detection_system/src/app/InMotionDropping/InMotionDropping_Flight_control_node_2.cpp">
+			<Option target="InMotionDropping_Flight_control_node_2"/>
+		</Unit>
+		<Unit filename="/home/huajun/M300_ws/src/forest_fire_detection_system/src/app/cmake-build-debug/CMakeFiles/3.27.8/CompilerIdCXX/CMakeCXXCompilerId.cpp">
+			<Option target="CMakeCXXCompilerId"/>
+		</Unit>
+		<Unit filename="/home/huajun/M300_ws/src/forest_fire_detection_system/src/app/fire_points_depth_estimation/GrabDataDepthEstimation.cpp">
+			<Option target="GrabDataDepthEstimation"/>
+		</Unit>
+		<Unit filename="/home/huajun/M300_ws/src/forest_fire_detection_system/src/app/precisely_water_dropping/PreciselyWaterDropping.cpp">
+			<Option target="PreciselyWaterDropping"/>
+		</Unit>
+		<Unit filename="/home/huajun/M300_ws/src/forest_fire_detection_system/src/app/single_fire_point_reconstruction/GrabInfoForReconstruction.cpp">
+			<Option target="GrabInfoForReconstruction"/>
+		</Unit>
+		<Unit filename="/home/huajun/M300_ws/src/forest_fire_detection_system/src/app/single_fire_point_task/SingleFirePointTaskManager.cpp">
+			<Option target="SingleFirePointTaskManager"/>
+		</Unit>
+		<Unit filename="/home/huajun/M300_ws/src/forest_fire_detection_system/src/app/valve_control_node/valve_control_node.cpp">
+			<Option target="valve_control_node"/>
+		</Unit>
+		<Unit filename="/home/huajun/M300_ws/src/forest_fire_detection_system/src/app/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

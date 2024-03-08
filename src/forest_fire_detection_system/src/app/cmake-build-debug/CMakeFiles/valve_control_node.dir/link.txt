@@ -1,0 +1,1 @@
+/usr/bin/c++ -g -rdynamic CMakeFiles/valve_control_node.dir/valve_control_node/valve_control_node.o -o valve_control_node  -lProject_module 
